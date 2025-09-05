@@ -8,19 +8,14 @@ namespace DSAAssignment
 {
     internal class Student: Person
     {
-        //// Variables
-        //private string studentID;
-        //private string program;
-        //private DateTime dateRegistered;
-
         // Default Constants
         public const string DEFAULT_STUDENTID = "000000000";
         public const string DEFAULT_PROGRAM = "NO PROGRAM";
         
         // Getters and Setters
-        public string StudentID { get; set; }
+        public string StudentID { get; private set; }
         public string Program { get; set; }
-        public DateTime DateRegistered { get; set; }
+        public DateTime DateRegistered { get; private set; }
         public Enrolment Enrolment { get; set; }
 
 
@@ -55,6 +50,53 @@ namespace DSAAssignment
             sb.Append(base.ToString());
             sb.Append(" }");
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Checks if two students are the same student and returns the result
+        /// </summary>
+        /// <param name="obj">The object to compare with</param>
+        /// <returns>True if the Student objects are the same, otherwise False</returns>
+        public override bool Equals(object obj)
+        {
+            if ( obj == null)
+                return false;
+            if (ReferenceEquals(obj, this))
+                return true;
+            if (obj.GetType() != this.GetType())
+                return false;
+            Student student = (Student) obj;
+            return student.StudentID == this.StudentID && student.Email == this.Email;
+        }
+         /// <summary>
+         /// Compares two Student objects, and returns true if they are equal
+         /// </summary>
+         /// <param name="student1">The first Student object to compare</param>
+         /// <param name="student2">The second Student object to compare</param>
+         /// <returns>True if the Student objects are equal, otherwise False</returns>
+        public static bool operator == (Student student1, Student student2)
+        {
+            return object.Equals(student1, student2);
+        }
+
+        /// <summary>
+        /// Compares two Student objects, and returns true if they are not equal
+        /// </summary>
+        /// <param name="student1">The first Student object to compare</param>
+        /// <param name="student2">The second Student object to compare</param>
+        /// <returns>True if the Student objects are not equal, otherwise False</returns>
+        public static bool operator != (Student student1, Student student2)
+        {
+            return !object.Equals(student1, student2);
+        }
+
+        /// <summary>
+        /// Generates and returns the hash code for the Student object
+        /// </summary>
+        /// <returns>The hash code of the Student object</returns>
+        public override int GetHashCode()
+        {
+            return this.StudentID.GetHashCode() ^ this.Email.GetHashCode();
         }
     }
 }

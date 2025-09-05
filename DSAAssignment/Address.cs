@@ -8,13 +8,6 @@ namespace DSAAssignment
 {
     internal class Address
     {
-        //// Variables
-        //private int streetNum;
-        //private string streetName;
-        //private string suburb;
-        //private string postcode;
-        //private string state;
-
         // Constants
         public const int DEFAULT_STREET_NUM = -1;
         public const string DEFAULT_STREET_NAME = "NOT PROVIDED";

@@ -8,12 +8,6 @@ namespace DSAAssignment
 {
     internal class Person
     {
-        //// Variables
-        //public string name;
-        //private string email;
-        //private string phoneNumber;
-        //private Address address;
-
         // Default constants
         public const string DEFAULT_NAME = "NO NAME";
         public const string DEFAULT_EMAIL = "";
