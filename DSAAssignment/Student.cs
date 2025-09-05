@@ -96,7 +96,7 @@ namespace DSAAssignment
         /// <returns>The hash code of the Student object</returns>
         public override int GetHashCode()
         {
-            return this.StudentID.GetHashCode() ^ this.Email.GetHashCode();
+            return this.StudentID.GetHashCode();
         }
     }
 }
