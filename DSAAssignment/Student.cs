@@ -66,8 +66,9 @@ namespace DSAAssignment
             if (obj.GetType() != this.GetType())
                 return false;
             Student student = (Student) obj;
-            return student.StudentID == this.StudentID && student.Email == this.Email;
+            return student.StudentID == this.StudentID;
         }
+
          /// <summary>
          /// Compares two Student objects, and returns true if they are equal
          /// </summary>
