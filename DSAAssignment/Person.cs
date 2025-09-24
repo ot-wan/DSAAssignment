@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Person
+    public class Person
     {
         // Default constants
         public const string DEFAULT_NAME = "NO NAME";

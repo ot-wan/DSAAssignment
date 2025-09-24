@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Utility
+    public class Utility
     {
         /// <summary>
         /// Performs a linear search of an array for a given target

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Address
+    public class Address
     {
         // Constants
         public const int DEFAULT_STREET_NUM = -1;

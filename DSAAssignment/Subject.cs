@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Subject
+    public class Subject
     {
         // Constants
         public const string DEFAULT_SUBJECT_CODE = "NO CODE";

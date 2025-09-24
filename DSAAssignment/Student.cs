@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Student: Person
+    public class Student: Person, IComparable, IComparable<Student>
     {
         // Default Constants
         public const string DEFAULT_STUDENTID = "000000000";
@@ -98,6 +98,32 @@ namespace DSAAssignment
         public override int GetHashCode()
         {
             return this.StudentID.GetHashCode();
+        }
+
+        /// <summary>
+        /// Compares a Student object to another object
+        /// </summary>
+        /// <param name="other">The object to compare to</param>
+        /// <returns>1, 0, or -1 depending on the result of the comparison of the StudentID properties</returns>
+        /// <exception cref="ArgumentNullException">Thrown when the provided object is null</exception>
+        /// <exception cref="ArgumentException">Thrown when the provited object is not a Student object</exception>
+        public int CompareTo(object other)
+        {
+            if (other == null)
+                throw new ArgumentNullException("other");
+            if (!(other is Student))
+                throw new ArgumentException("Expected Student instance", "other");
+            return CompareTo((Student)other);
+        }
+
+        /// <summary>
+        /// Compares one Student object instance with another
+        /// </summary>
+        /// <param name="other">The Student object to comare to</param>
+        /// <returns>1, 0, or -1 depending on the result of the comparison of the StudentID properties</returns>
+        public int CompareTo(Student other)
+        {
+            return this.StudentID.CompareTo(other.StudentID);
         }
     }
 }

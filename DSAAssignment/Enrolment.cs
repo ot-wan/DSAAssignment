@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSAAssignment
 {
-    internal class Enrolment
+    public class Enrolment
     {
         // Constants
         public const string DEFAULT_DATE_ENROLED = "NOT PROVIDED";

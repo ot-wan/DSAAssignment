@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAAssignment", "DSAAssignment\DSAAssignment.csproj", "{B1AFD24F-1465-43AC-AFDA-F5FEAB50933E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAAssignmentTests", "DSAAssignmentTests\DSAAssignmentTests.csproj", "{E7BCE888-B2FC-48A3-B2CE-F2B15CE0268C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B1AFD24F-1465-43AC-AFDA-F5FEAB50933E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1AFD24F-1465-43AC-AFDA-F5FEAB50933E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1AFD24F-1465-43AC-AFDA-F5FEAB50933E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7BCE888-B2FC-48A3-B2CE-F2B15CE0268C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BCE888-B2FC-48A3-B2CE-F2B15CE0268C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BCE888-B2FC-48A3-B2CE-F2B15CE0268C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BCE888-B2FC-48A3-B2CE-F2B15CE0268C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
