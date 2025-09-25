@@ -68,6 +68,14 @@ namespace DSAAssignmentTests
         {
             Utility.SortAscending(studentArray);
             Assert.AreEqual("231129", studentArray[0].StudentID);
+            Assert.AreEqual("389765", studentArray[1].StudentID);
+            Assert.AreEqual("467959", studentArray[2].StudentID);
+            Assert.AreEqual("487474", studentArray[3].StudentID);
+            Assert.AreEqual("582901", studentArray[4].StudentID);
+            Assert.AreEqual("694569", studentArray[5].StudentID);
+            Assert.AreEqual("699187", studentArray[6].StudentID);
+            Assert.AreEqual("710202", studentArray[7].StudentID);
+            Assert.AreEqual("741610", studentArray[8].StudentID);
             Assert.AreEqual("923092", studentArray[9].StudentID);
         }
 
@@ -76,6 +84,14 @@ namespace DSAAssignmentTests
         {
             Utility.SortDescending(studentArray);
             Assert.AreEqual("923092", studentArray[0].StudentID);
+            Assert.AreEqual("741610", studentArray[1].StudentID);
+            Assert.AreEqual("710202", studentArray[2].StudentID);
+            Assert.AreEqual("699187", studentArray[3].StudentID);
+            Assert.AreEqual("694569", studentArray[4].StudentID);
+            Assert.AreEqual("582901", studentArray[5].StudentID);
+            Assert.AreEqual("487474", studentArray[6].StudentID);
+            Assert.AreEqual("467959", studentArray[7].StudentID);
+            Assert.AreEqual("389765", studentArray[8].StudentID);
             Assert.AreEqual("231129", studentArray[9].StudentID);
         }
     }
