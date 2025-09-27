@@ -66,33 +66,57 @@ namespace DSAAssignmentTests
         [Test]
         public void TestSortingAscending()
         {
+            Student[] expected = new Student[10];
+            expected[0] = new Student("231129", "Ace Piloting", new Enrolment(), "Carol Danvers", "cdanvers@email.com", "0404668725", new Address());
+            expected[1] = new Student("389765", "Archery", new Enrolment(), "Clint Barton", "cbarton@email.com", "0404208170", new Address());
+            expected[2] = new Student("467959", "Quantum Physics", new Enrolment(), "Janet van Dyne", "jvandyne@email.com", "0404321926", new Address());
+            expected[3] = new Student("487474", "Chemistry", new Enrolment(), "Bruce Banner", "bbanner@email.com", "0404378800", new Address());
+            expected[4] = new Student("582901", "Ethics", new Enrolment(), "Steven Rogers", "srogers@email.com", "0404641781", new Address());
+            expected[5] = new Student("694569", "Electrical Engineering", new Enrolment(), "Thor Odinson", "todinson@email.com", "0404996048", new Address());
+            expected[6] = new Student("699187", "Aircraft Design", new Enrolment(), "Sam Wilson", "swilson@email.com", "0404745480", new Address());
+            expected[7] = new Student("710202", "Critical Thinking", new Enrolment(), "Phil Coulson", "pcoulson@email.com", "0404732617", new Address());
+            expected[8] = new Student("741610", "Advanced Programming", new Enrolment(), "Tony Stark", "tstark@email.com", "0404738586", new Address());
+            expected[9] = new Student("923092", "Social Engineering", new Enrolment(), "Natasha Romanoff", "nromanoff@email.com", "0404706861", new Address());
+
             Utility.SortAscending(studentArray);
-            Assert.AreEqual("231129", studentArray[0].StudentID);
-            Assert.AreEqual("389765", studentArray[1].StudentID);
-            Assert.AreEqual("467959", studentArray[2].StudentID);
-            Assert.AreEqual("487474", studentArray[3].StudentID);
-            Assert.AreEqual("582901", studentArray[4].StudentID);
-            Assert.AreEqual("694569", studentArray[5].StudentID);
-            Assert.AreEqual("699187", studentArray[6].StudentID);
-            Assert.AreEqual("710202", studentArray[7].StudentID);
-            Assert.AreEqual("741610", studentArray[8].StudentID);
-            Assert.AreEqual("923092", studentArray[9].StudentID);
+            Assert.AreEqual(studentArray[0], expected[0]);
+            Assert.AreEqual(studentArray[1], expected[1]);
+            Assert.AreEqual(studentArray[2], expected[2]);
+            Assert.AreEqual(studentArray[3], expected[3]);
+            Assert.AreEqual(studentArray[4], expected[4]);
+            Assert.AreEqual(studentArray[5], expected[5]);
+            Assert.AreEqual(studentArray[6], expected[6]);
+            Assert.AreEqual(studentArray[7], expected[7]);
+            Assert.AreEqual(studentArray[8], expected[8]);
+            Assert.AreEqual(studentArray[9], expected[9]);
         }
 
         [Test]
         public void TestSortingDescending()
         {
+            Student[] expected = new Student[10];
+            expected[0] = new Student("923092", "Social Engineering", new Enrolment(), "Natasha Romanoff", "nromanoff@email.com", "0404706861", new Address());
+            expected[1] = new Student("741610", "Advanced Programming", new Enrolment(), "Tony Stark", "tstark@email.com", "0404738586", new Address());
+            expected[2] = new Student("710202", "Critical Thinking", new Enrolment(), "Phil Coulson", "pcoulson@email.com", "0404732617", new Address());
+            expected[3] = new Student("699187", "Aircraft Design", new Enrolment(), "Sam Wilson", "swilson@email.com", "0404745480", new Address());
+            expected[4] = new Student("694569", "Electrical Engineering", new Enrolment(), "Thor Odinson", "todinson@email.com", "0404996048", new Address());
+            expected[5] = new Student("582901", "Ethics", new Enrolment(), "Steven Rogers", "srogers@email.com", "0404641781", new Address());
+            expected[6] = new Student("487474", "Chemistry", new Enrolment(), "Bruce Banner", "bbanner@email.com", "0404378800", new Address());
+            expected[7] = new Student("467959", "Quantum Physics", new Enrolment(), "Janet van Dyne", "jvandyne@email.com", "0404321926", new Address());
+            expected[8] = new Student("389765", "Archery", new Enrolment(), "Clint Barton", "cbarton@email.com", "0404208170", new Address());
+            expected[9] = new Student("231129", "Ace Piloting", new Enrolment(), "Carol Danvers", "cdanvers@email.com", "0404668725", new Address()); 
+
             Utility.SortDescending(studentArray);
-            Assert.AreEqual("923092", studentArray[0].StudentID);
-            Assert.AreEqual("741610", studentArray[1].StudentID);
-            Assert.AreEqual("710202", studentArray[2].StudentID);
-            Assert.AreEqual("699187", studentArray[3].StudentID);
-            Assert.AreEqual("694569", studentArray[4].StudentID);
-            Assert.AreEqual("582901", studentArray[5].StudentID);
-            Assert.AreEqual("487474", studentArray[6].StudentID);
-            Assert.AreEqual("467959", studentArray[7].StudentID);
-            Assert.AreEqual("389765", studentArray[8].StudentID);
-            Assert.AreEqual("231129", studentArray[9].StudentID);
+            Assert.AreEqual(studentArray[0], expected[0]);
+            Assert.AreEqual(studentArray[1], expected[1]);
+            Assert.AreEqual(studentArray[2], expected[2]);
+            Assert.AreEqual(studentArray[3], expected[3]);
+            Assert.AreEqual(studentArray[4], expected[4]);
+            Assert.AreEqual(studentArray[5], expected[5]);
+            Assert.AreEqual(studentArray[6], expected[6]);
+            Assert.AreEqual(studentArray[7], expected[7]);
+            Assert.AreEqual(studentArray[8], expected[8]);
+            Assert.AreEqual(studentArray[9], expected[9]);
         }
     }
 }
